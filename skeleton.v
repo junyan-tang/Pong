@@ -84,10 +84,11 @@ module skeleton(resetn,
 								 .b_data(VGA_B),
 								 .g_data(VGA_G),
 								 .r_data(VGA_R),
-								 .up1(up1),
-								 .down1(down1),
-								 .up2(up2),
-								 .down2(down2),
+								 .ps_input(ps2_out),
+//								 .up1(up1),
+//								 .down1(down1),
+//								 .up2(up2),
+//								 .down2(down2),
 								 .sw(sw));
 	
 	

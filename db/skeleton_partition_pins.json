@@ -176,31 +176,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK_50",
-					"strict" : false
-				},
-				{
 					"name" : "resetn",
 					"strict" : false
 				},
 				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
 					"name" : "sw",
-					"strict" : false
-				},
-				{
-					"name" : "up2",
-					"strict" : false
-				},
-				{
-					"name" : "down2",
-					"strict" : false
-				},
-				{
-					"name" : "up1",
-					"strict" : false
-				},
-				{
-					"name" : "down1",
 					"strict" : false
 				}
 			]

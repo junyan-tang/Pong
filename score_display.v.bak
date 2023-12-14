@@ -1,0 +1,37 @@
+module score_display( score, number);
+input [3:0] score;
+output [6:0] number;
+
+case(score)
+			0: begin
+					number <= 7'b1111011;
+				end
+			1: begin
+					number <= 7'b0010010;
+				end
+			2: begin
+					number <= 7'b1100111;
+				end
+			3: begin
+					number <= 7'b0110111;
+				end
+			4: begin
+					number <= 7'b0011110;
+				end
+			5: begin
+					number <= 7'b0111101;
+				end
+			6: begin
+					number <= 7'b1111101;
+				end
+			7: begin
+					number <= 7'b0010011;
+				end
+			8: begin
+					number <= 7'b1111111;
+				end
+			9: begin
+					number <= 7'b0111111;
+				end
+endcase
+endmodule

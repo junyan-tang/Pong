@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Thu Dec 14 13:59:13 2023
+Thu Dec 14 18:21:50 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -85,15 +85,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 14 13:59:13 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 14 18:21:50 2023       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,158                                       ;
-;     Total combinational functions  ; 2,141                                       ;
-;     Dedicated logic registers      ; 211                                         ;
-; Total registers                    ; 211                                         ;
+; Total logic elements               ; 2,275                                       ;
+;     Total combinational functions  ; 2,259                                       ;
+;     Dedicated logic registers      ; 238                                         ;
+; Total registers                    ; 238                                         ;
 ; Total pins                         ; 146                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,463,744                                   ;
@@ -276,20 +276,20 @@ agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 2,158                                          ;
+; Estimated Total logic elements              ; 2,275                                          ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 2141                                           ;
+; Total combinational functions               ; 2259                                           ;
 ; Logic element usage by number of LUT inputs ;                                                ;
-;     -- 4 input functions                    ; 745                                            ;
-;     -- 3 input functions                    ; 448                                            ;
-;     -- <=2 input functions                  ; 948                                            ;
+;     -- 4 input functions                    ; 819                                            ;
+;     -- 3 input functions                    ; 451                                            ;
+;     -- <=2 input functions                  ; 989                                            ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 1589                                           ;
+;     -- normal mode                          ; 1707                                           ;
 ;     -- arithmetic mode                      ; 552                                            ;
 ;                                             ;                                                ;
-; Total registers                             ; 211                                            ;
-;     -- Dedicated logic registers            ; 211                                            ;
+; Total registers                             ; 238                                            ;
+;     -- Dedicated logic registers            ; 238                                            ;
 ;     -- I/O registers                        ; 0                                              ;
 ;                                             ;                                                ;
 ; I/O pins                                    ; 146                                            ;
@@ -301,9 +301,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1                                              ;
 ;                                             ;                                                ;
 ; Maximum fan-out node                        ; VGA_Audio_PLL:p1|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 482                                            ;
-; Total fan-out                               ; 11789                                          ;
-; Average fan-out                             ; 3.96                                           ;
+; Maximum fan-out                             ; 509                                            ;
+; Total fan-out                               ; 12242                                          ;
+; Average fan-out                             ; 3.92                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -312,16 +312,16 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                           ; Entity Name                  ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |skeleton                                    ; 2141 (0)            ; 211 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 146  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
+; |skeleton                                    ; 2259 (0)            ; 238 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 146  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex2|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
-;    |PS2_Interface:myps2|                     ; 48 (16)             ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                 ; PS2_Interface                ; work         ;
+;    |PS2_Interface:myps2|                     ; 41 (9)              ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                 ; PS2_Interface                ; work         ;
 ;       |PS2_Controller:PS2|                   ; 32 (7)              ; 30 (5)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2                                                                                              ; PS2_Controller               ; work         ;
 ;          |Altera_UP_PS2_Data_In:PS2_Data_In| ; 25 (25)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In                                                            ; Altera_UP_PS2_Data_In        ; work         ;
 ;    |Reset_Delay:r0|                          ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Reset_Delay:r0                                                                                                                      ; Reset_Delay                  ; work         ;
 ;    |VGA_Audio_PLL:p1|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                    ; VGA_Audio_PLL                ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                            ; altpll                       ; work         ;
-;    |vga_controller:vga_ins|                  ; 2052 (472)          ; 152 (122)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
+;    |vga_controller:vga_ins|                  ; 2177 (600)          ; 179 (149)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
 ;       |img_data:img_data_inst|               ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst                                                                                       ; img_data                     ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component                                                       ; altsyncram                   ; work         ;
 ;             |altsyncram_hfc1:auto_generated| ; 278 (0)             ; 6 (6)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated                        ; altsyncram_hfc1              ; work         ;
@@ -338,10 +338,10 @@ agreement for further details.
 ;          |lpm_divide_lcm:auto_generated|     ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated                                                                ; lpm_divide_lcm               ; work         ;
 ;             |sign_div_unsign_anh:divider|    ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh          ; work         ;
 ;                |alt_u_div_8af:divider|       ; 292 (292)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af                ; work         ;
-;       |lpm_divide:Mod1|                      ; 746 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1                                                                                              ; lpm_divide                   ; work         ;
-;          |lpm_divide_pcm:auto_generated|     ; 746 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated                                                                ; lpm_divide_pcm               ; work         ;
-;             |sign_div_unsign_enh:divider|    ; 746 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated|sign_div_unsign_enh:divider                                    ; sign_div_unsign_enh          ; work         ;
-;                |alt_u_div_gaf:divider|       ; 746 (746)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated|sign_div_unsign_enh:divider|alt_u_div_gaf:divider              ; alt_u_div_gaf                ; work         ;
+;       |lpm_divide:Mod1|                      ; 743 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1                                                                                              ; lpm_divide                   ; work         ;
+;          |lpm_divide_pcm:auto_generated|     ; 743 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated                                                                ; lpm_divide_pcm               ; work         ;
+;             |sign_div_unsign_enh:divider|    ; 743 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated|sign_div_unsign_enh:divider                                    ; sign_div_unsign_enh          ; work         ;
+;                |alt_u_div_gaf:divider|       ; 743 (743)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated|sign_div_unsign_enh:divider|alt_u_div_gaf:divider              ; alt_u_div_gaf                ; work         ;
 ;       |video_sync_generator:LTM_ins|         ; 44 (44)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|video_sync_generator:LTM_ins                                                                                 ; video_sync_generator         ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -526,12 +526,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 211   ;
-; Number of registers using Synchronous Clear  ; 78    ;
+; Total registers                              ; 238   ;
+; Number of registers using Synchronous Clear  ; 71    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 40    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 155   ;
+; Number of registers using Clock Enable       ; 174   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -541,6 +541,9 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
+; vga_controller:vga_ins|p1y[8]           ; 10      ;
+; vga_controller:vga_ins|p1y[4]           ; 13      ;
+; vga_controller:vga_ins|p1y[3]           ; 8       ;
 ; vga_controller:vga_ins|ball_x[8]        ; 3       ;
 ; vga_controller:vga_ins|ball_x[6]        ; 3       ;
 ; vga_controller:vga_ins|ball_x[4]        ; 3       ;
@@ -548,40 +551,38 @@ Encoding Type:  One-Hot
 ; vga_controller:vga_ins|ball_y[8]        ; 7       ;
 ; vga_controller:vga_ins|ball_y[4]        ; 7       ;
 ; vga_controller:vga_ins|ball_y[3]        ; 7       ;
-; vga_controller:vga_ins|p2y[8]           ; 9       ;
-; vga_controller:vga_ins|p2y[4]           ; 12      ;
-; vga_controller:vga_ins|p2y[3]           ; 7       ;
-; vga_controller:vga_ins|p1y[8]           ; 10      ;
-; vga_controller:vga_ins|p1y[4]           ; 12      ;
-; vga_controller:vga_ins|p1y[3]           ; 7       ;
+; vga_controller:vga_ins|p2y[8]           ; 8       ;
+; vga_controller:vga_ins|p2y[4]           ; 11      ;
+; vga_controller:vga_ins|p2y[3]           ; 8       ;
 ; Total number of inverted registers = 13 ;         ;
 +-----------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[1]                   ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[7]         ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[8] ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[8]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[3]                       ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[3]                                                                    ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[7]                                                                    ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 21 LEs               ; 7 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p2y[9]                                                                                ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 21 LEs               ; 7 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p1y[5]                                                                                ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_y[2]                                                                             ;
-; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_x[9]                                                                             ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p2y[8]                                                                                ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p1y[3]                                                                                ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|ball_y[4]                                                                             ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_x[8]                                                                             ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |skeleton|vga_controller:vga_ins|mv                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[6]                                                                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[5]                    ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[17]         ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[11] ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[19]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[2]                        ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 42 LEs               ; 28 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|number1[0]                                                                             ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 42 LEs               ; 28 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|number2[0]                                                                             ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 21 LEs               ; 7 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p2y[5]                                                                                 ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 21 LEs               ; 7 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p1y[2]                                                                                 ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_y[2]                                                                              ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_x[9]                                                                              ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p2y[3]                                                                                 ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p1y[8]                                                                                 ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|ball_y[3]                                                                              ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_x[8]                                                                              ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |skeleton|vga_controller:vga_ins|mv                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -1949,30 +1950,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 146                         ;
-; cycloneiii_ff         ; 211                         ;
+; cycloneiii_ff         ; 238                         ;
 ;     CLR               ; 11                          ;
 ;     CLR SCLR          ; 19                          ;
-;     ENA               ; 92                          ;
+;     ENA               ; 118                         ;
 ;     ENA CLR           ; 10                          ;
-;     ENA SCLR          ; 53                          ;
+;     ENA SCLR          ; 46                          ;
 ;     SCLR              ; 6                           ;
-;     plain             ; 20                          ;
+;     plain             ; 28                          ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 2145                        ;
+; cycloneiii_lcell_comb ; 2263                        ;
 ;     arith             ; 552                         ;
 ;         2 data inputs ; 184                         ;
 ;         3 data inputs ; 368                         ;
-;     normal            ; 1593                        ;
+;     normal            ; 1711                        ;
 ;         0 data inputs ; 41                          ;
 ;         1 data inputs ; 11                          ;
-;         2 data inputs ; 716                         ;
-;         3 data inputs ; 80                          ;
-;         4 data inputs ; 745                         ;
+;         2 data inputs ; 757                         ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 819                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 328                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 49.80                       ;
-; Average LUT depth     ; 23.44                       ;
+; Max LUT depth         ; 50.80                       ;
+; Average LUT depth     ; 24.04                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1991,7 +1992,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Dec 14 13:59:01 2023
+    Info: Processing started: Thu Dec 14 18:21:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -2027,6 +2028,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file img_ind
     Info (12023): Found entity 1: img_index File: C:/ECE550/PC6/img_index.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file img_data.v
     Info (12023): Found entity 1: img_data File: C:/ECE550/PC6/img_data.v Line: 39
+Info (12021): Found 0 design units, including 0 entities, in source file score_display.v
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(51): created implicit net for "inclock" File: C:/ECE550/PC6/skeleton.v Line: 51
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(77): created implicit net for "DLY_RST" File: C:/ECE550/PC6/skeleton.v Line: 77
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(78): created implicit net for "VGA_CTRL_CLK" File: C:/ECE550/PC6/skeleton.v Line: 78
@@ -2136,7 +2138,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 32
 Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/ECE550/PC6/skeleton.v Line: 61
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/ECE550/PC6/PS2_Interface.v Line: 36
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/ECE550/PC6/PS2_Interface.v Line: 41
 Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/ECE550/PC6/PS2_Controller.v Line: 248
 Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/ECE550/PC6/PS2_Controller.v Line: 268
 Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/ECE550/PC6/skeleton.v Line: 64
@@ -2204,34 +2206,34 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/ECE550/PC6/skeleton.v Line: 91
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(108): object "btemp_x" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 108
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(109): object "btemp_y" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 109
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(115): object "slow_count" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 115
-Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(116): object "fast_count" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 116
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(52): truncated value with size 32 to match size of target (19) File: C:/ECE550/PC6/vga_controller.v Line: 52
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(53): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 53
-Critical Warning (10237): Verilog HDL warning at vga_controller.v(53): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/PC6/vga_controller.v Line: 53
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(54): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 54
-Critical Warning (10237): Verilog HDL warning at vga_controller.v(54): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/PC6/vga_controller.v Line: 54
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(146): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 146
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(152): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 152
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(172): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 172
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(178): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 178
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(207): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 207
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(208): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 208
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(212): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 212
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(213): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 213
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(217): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 217
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(218): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 218
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(222): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 222
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(223): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 223
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(246): truncated value with size 32 to match size of target (4) File: C:/ECE550/PC6/vga_controller.v Line: 246
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(263): truncated value with size 32 to match size of target (4) File: C:/ECE550/PC6/vga_controller.v Line: 263
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/ECE550/PC6/vga_controller.v Line: 42
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/ECE550/PC6/skeleton.v Line: 92
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(114): object "btemp_x" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 114
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(115): object "btemp_y" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 115
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(121): object "slow_count" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 121
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(122): object "fast_count" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 122
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(58): truncated value with size 32 to match size of target (19) File: C:/ECE550/PC6/vga_controller.v Line: 58
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(59): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 59
+Critical Warning (10237): Verilog HDL warning at vga_controller.v(59): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/PC6/vga_controller.v Line: 59
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(60): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 60
+Critical Warning (10237): Verilog HDL warning at vga_controller.v(60): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/PC6/vga_controller.v Line: 60
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(168): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 168
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(174): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 174
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(249): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 249
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(255): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 255
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(374): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 374
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(375): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 375
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(379): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 379
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(380): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 380
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(384): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 384
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(385): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 385
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(389): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 389
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(390): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 390
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(413): truncated value with size 32 to match size of target (4) File: C:/ECE550/PC6/vga_controller.v Line: 413
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(430): truncated value with size 32 to match size of target (4) File: C:/ECE550/PC6/vga_controller.v Line: 430
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/ECE550/PC6/vga_controller.v Line: 48
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/video_sync_generator.v Line: 77
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/ECE550/PC6/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/ECE550/PC6/vga_controller.v Line: 63
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/ECE550/PC6/vga_controller.v Line: 69
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_data.v Line: 81
 Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_data.v Line: 81
 Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/PC6/img_data.v Line: 81
@@ -2259,7 +2261,7 @@ Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
     Info (12023): Found entity 1: mux_1pb File: C:/ECE550/PC6/db/mux_1pb.tdf Line: 23
 Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated|mux_1pb:mux2" File: C:/ECE550/PC6/db/altsyncram_hfc1.tdf Line: 41
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/ECE550/PC6/vga_controller.v Line: 73
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/ECE550/PC6/vga_controller.v Line: 79
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_index.v Line: 82
 Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_index.v Line: 82
 Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/PC6/img_index.v Line: 82
@@ -2351,11 +2353,11 @@ Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
         Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/ECE550/PC6/db/pll_altpll.v Line: 78
 Info (278001): Inferred 3 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/ECE550/PC6/vga_controller.v Line: 53
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/ECE550/PC6/vga_controller.v Line: 54
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/ECE550/PC6/vga_controller.v Line: 139
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/ECE550/PC6/vga_controller.v Line: 53
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 53
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/ECE550/PC6/vga_controller.v Line: 59
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/ECE550/PC6/vga_controller.v Line: 60
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/ECE550/PC6/vga_controller.v Line: 161
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/ECE550/PC6/vga_controller.v Line: 59
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 59
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2370,16 +2372,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_7pc File: C:/ECE550/PC6/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info (12023): Found entity 1: add_sub_8pc File: C:/ECE550/PC6/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/ECE550/PC6/vga_controller.v Line: 54
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 54
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/ECE550/PC6/vga_controller.v Line: 60
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 60
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
     Info (12023): Found entity 1: lpm_divide_ikm File: C:/ECE550/PC6/db/lpm_divide_ikm.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/ECE550/PC6/vga_controller.v Line: 139
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 139
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/ECE550/PC6/vga_controller.v Line: 161
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 161
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "19"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2494,18 +2496,23 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
-Info (21057): Implemented 2642 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "up1" File: C:/ECE550/PC6/skeleton.v Line: 42
+    Warning (15610): No output dependent on input pin "down1" File: C:/ECE550/PC6/skeleton.v Line: 42
+    Warning (15610): No output dependent on input pin "up2" File: C:/ECE550/PC6/skeleton.v Line: 42
+    Warning (15610): No output dependent on input pin "down2" File: C:/ECE550/PC6/skeleton.v Line: 42
+Info (21057): Implemented 2759 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 137 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 2167 logic cells
+    Info (21061): Implemented 2284 logic cells
     Info (21064): Implemented 328 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 203 warnings
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Thu Dec 14 13:59:13 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 208 warnings
+    Info: Peak virtual memory: 4881 megabytes
+    Info: Processing ended: Thu Dec 14 18:21:50 2023
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +------------------------------------------+
