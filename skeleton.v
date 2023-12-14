@@ -14,7 +14,8 @@ module skeleton(resetn,
 	up1,
 	down1,
 	up2,
-	down2);  													// 50 MHz clock
+	down2,
+	sw);  													// 50 MHz clock
 		
 	////////////////////////	VGA	////////////////////////////
 	output			VGA_CLK;   				//	VGA Clock
@@ -32,13 +33,13 @@ module skeleton(resetn,
 	inout 			ps2_data, ps2_clock;
 	
 	////////////////////////	Seven Segment	////////////////////////////
-	output 	[7:0] 	leds, lcd_data;
+	output 	[7:0] 	leds;
 	output 	[6:0] 	seg1, seg2, seg3, seg4, seg5, seg6, seg7, seg8;
 	output 	[31:0] 	debug_data_in;
 	output   [11:0]   debug_addr;
 	
 	//four direction inputs
-	input up1, down1, up2, down2;
+	input up1, down1, up2, down2, sw;
 	
 	
 	wire			 clock;
@@ -86,7 +87,7 @@ module skeleton(resetn,
 								 .up1(up1),
 								 .down1(down1),
 								 .up2(up2),
-								 .down2(down2)
+								 .down2(down2),
 								 .sw(sw));
 	
 	

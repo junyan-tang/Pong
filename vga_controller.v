@@ -28,6 +28,7 @@ output [7:0] r_data;
 reg [18:0] ADDR;
 reg [23:0] bgr_data;
 reg [9:0] current_x,current_y;
+reg [31:0] counter;
 wire VGA_CLK_n;
 wire [7:0] index;
 wire [23:0] bgr_data_raw;
@@ -72,13 +73,10 @@ img_index	img_index_inst (
 	);	
 //////
 //////latch valid data at falling edge;
-always@(posedge VGA_CLK_n) 
-begin
-  if(current_x>x&&current_x<x+30&&current_y>y&&current_y<y+30)
-    bgr_data <= 24'haf5555;
-  else
-    bgr_data <= bgr_data_raw;
-end
+//always@(posedge VGA_CLK_n) 
+//begin
+//  
+//end
 assign b_data = bgr_data[23:16];
 assign g_data = bgr_data[15:8];
 assign r_data = bgr_data[7:0]; 
@@ -120,24 +118,25 @@ wire slow_clock;
 wire fast_clock;
 
 //Generate customized clock
-assign slow_clock = slow_count[20];
-always@ (posedge VGA_CLK_n)
-begin
-	slow_count <= slow_count + 1;
-end
+//assign slow_clock = slow_count[20];
+//always@ (posedge VGA_CLK_n)
+//begin
+//		slow_count <= slow_count + 1;
+//end
 
-assign fast_clock = fast_count[10];
-always@ (posedge VGA_CLK_n)
-begin
-	fast_count <= fast_count + 1;
-end
+//assign fast_clock = fast_count[10];
+//always@ (posedge VGA_CLK_n)
+//begin
+//	fast_count <= fast_count + 1;
+//end
 
 //movement of player1's paddle
-always@(posedge slow_clock) 
+always@(posedge VGA_CLK_n) 
 begin
 	//if switch is eaqual to 0, the game has already begun
   if(sw == 1'b0)
-    begin
+    begin 
+	 if (counter%400000 == 0)
 	   if(up1 == 1'b0 && down1 == 1'b0)
 			p1y <= p1y;
 		else if (up1 == 1'b0) begin
@@ -158,11 +157,12 @@ begin
 end
 	
 //movement of player2's paddle
-always@(posedge slow_clock) 
+always@(posedge VGA_CLK_n) 
 begin
 	//if switch is eaqual to 0, the game has already begun
   if(sw == 1'b0)
-    begin
+    begin 
+	 if (counter%400000 == 0)
 	   if(up2 == 1'b0 && down2 == 1'b0)
 			p2y <= p2y;
 		else if (up2 == 1'b0) begin
@@ -183,10 +183,24 @@ begin
 end
 
 //movement of ball and generation of new ball
-always@(posedge slow_clock)
+always@(posedge VGA_CLK_n)
 begin
 	if(sw == 1'b0)
 		begin
+			if((current_x>ball_x -r && current_x<ball_x + r && current_y>ball_y -r && current_y < ball_y + r )
+			 || (current_x>p2x && current_x<p2x + 20 && current_y>p2y && current_y < p2y + 80)
+			 || (current_x>p1x && current_x<p1x + 20 && current_y>p1y && current_y < p1y + 80))
+			 bgr_data <= 24'haf5555;
+			else
+			 bgr_data <= bgr_data_raw;
+			 
+			 
+			 if (counter >= 1000000)
+			 counter <= 0;
+			 else
+			 counter <= counter + 1;
+			 
+			 if (counter == 0) 
 			case(mv)
 				//SW direction
 				0: begin
@@ -210,52 +224,56 @@ begin
 					end
 			endcase
 			//top and bottom bound
-			if(ball_y - r<= 80 && mv == 3)
+			if(ball_y - r< 80 && mv == 3)
 				mv = 2;
-			else if (ball_y - r<= 80 && mv == 2)
+			else if (ball_y - r < 80 && mv == 2)
 				mv = 0;
 			else if (ball_y + r > 450 && mv == 0)
 				mv = 2;
 			else if (ball_y + r > 450 && mv == 1)
 				mv = 3;
 			//left and right paddle
-			else if (ball_x -r <= p1x + 20 && ball_y > p1y && ball_y < p1y + 80 &&  movement == 0)
+			else if (ball_x -r < p1x + 20 && ball_y > p1y && ball_y < p1y + 80 &&  mv == 0)
 				mv = 1;
-			else if (ball_x -r <= p1x + 20 && ball_y > p1y && ball_y < p1y + 80 &&  movement == 2)
+			else if (ball_x -r < p1x + 20 && ball_y > p1y && ball_y < p1y + 80 &&  mv == 2)
 				mv = 3;
-			else if (ball_x +r <= p2x && ball_y > p2y && ball_y < p2y + 80 &&  movement == 1)
+			else if (ball_x +r > p2x && ball_y > p2y && ball_y < p2y + 80 &&  mv == 1)
 				mv = 0;
-			else if (ball_x +r <= p2x && ball_y > p2y && ball_y < p2y + 80 &&  movement == 3)
+			else if (ball_x +r > p2x && ball_y > p2y && ball_y < p2y + 80 &&  mv == 3)
 				mv = 2;
 			//player2 score
-			else if (ball_x - r <= 240) begin
+			else if (ball_x - r < 238) begin
 				p2score = p2score + 1;
 				//reset ball
-				ball_x <= btemp_x - p2score;
-				ball_y <= btemp_y - p2score * 2;
-				btemp_x <= ball_x;
-				btemp_y <= ball_y;
-				if( ball_x < 247 || ball_x > 393 || ball_y > 443 || ball_y < 87)begin
-					ball_x <= 320;
-					ball_y <= 280;
-					btemp_x <= ball_x;
-					btemp_y <= ball_y;
-					end
+				ball_x <= 340;
+				ball_y <= 280;
+//				ball_x <= btemp_x - p2score;
+//				ball_y <= btemp_y - p2score * 2;
+//				btemp_x <= ball_x;
+//				btemp_y <= ball_y;
+//				if( ball_x < 247 || ball_x > 393 || ball_y > 443 || ball_y < 87)begin
+//					ball_x <= 320;
+//					ball_y <= 280;
+//					btemp_x <= ball_x;
+//					btemp_y <= ball_y;
+//					end
 				end
 			//player1 score
-			else if (ball_X + r >= 400)begin
+			else if (ball_x + r >= 402)begin
 				p1score = p1score + 1;
 				//reset ball
-				ball_x <= btemp_x + p1score;
-				ball_y <= btemp_y + p1score * 2;
-				btemp_x <= ball_x;
-				btemp_y <= ball_y;
-				if( ball_x < 247 || ball_x > 393 || ball_y > 443 || ball_y < 87)begin
-					ball_x <= 320;
-					ball_y <= 280;
-					btemp_x <= ball_x;
-					btemp_y <= ball_y;
-					end
+				ball_x <= 340;
+				ball_y <= 280;
+//				ball_x <= btemp_x + p1score;
+//				ball_y <= btemp_y + p1score * 2;
+//				btemp_x <= ball_x;
+//				btemp_y <= ball_y;
+//				if( ball_x < 247 || ball_x > 393 || ball_y > 443 || ball_y < 87)begin
+//					ball_x <= 320;
+//					ball_y <= 280;
+//					btemp_x <= ball_x;
+//					btemp_y <= ball_y;
+//					end
 				end
 		
 			if(p1score == 11 || p2score == 11) begin
@@ -266,12 +284,12 @@ begin
 
 	else
 		begin
-		ball_X <= 340;
+		ball_x <= 340;
 		ball_y <= 280;
 		p1score <= 0;
 		p2score <= 0;
 		end
-		
+	
 	end
 
 

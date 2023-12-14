@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Thu Nov 02 15:11:19 2023
+Thu Dec 14 13:59:13 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,47 +15,50 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver
- 11. State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter
- 12. State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver
- 13. Registers Removed During Synthesis
- 14. Removed Registers Triggering Further Register Optimizations
- 15. General Register Statistics
- 16. Inverted Register Statistics
- 17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated
- 19. Source assignments for processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated
- 20. Source assignments for vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated
- 21. Source assignments for vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated
- 22. Parameter Settings for User Entity Instance: pll:div|altpll:altpll_component
- 23. Parameter Settings for User Entity Instance: processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component
- 24. Parameter Settings for User Entity Instance: processor:myprocessor|imem:myimem|altsyncram:altsyncram_component
- 25. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2
- 26. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
- 27. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
- 28. Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins
- 29. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component
- 30. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component
- 31. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod0
- 32. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Div0
- 33. altpll Parameter Settings by Entity Instance
- 34. altsyncram Parameter Settings by Entity Instance
- 35. Port Connectivity Checks: "VGA_Audio_PLL:p1"
- 36. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
- 37. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
- 38. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
- 39. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
- 40. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
- 41. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
- 42. Port Connectivity Checks: "lcd:mylcd"
- 43. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
- 44. Port Connectivity Checks: "PS2_Interface:myps2"
- 45. Port Connectivity Checks: "processor:myprocessor|imem:myimem"
- 46. Port Connectivity Checks: "processor:myprocessor|dmem:mydmem"
- 47. Port Connectivity Checks: "pll:div"
- 48. Post-Synthesis Netlist Statistics for Top Partition
- 49. Elapsed Time Per Partition
- 50. Analysis & Synthesis Messages
+ 10. State Machine - |skeleton|vga_controller:vga_ins|mv
+ 11. State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver
+ 12. State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter
+ 13. State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Inverted Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated
+ 20. Source assignments for processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated
+ 21. Source assignments for vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated
+ 22. Source assignments for vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_sec1:auto_generated
+ 23. Parameter Settings for User Entity Instance: pll:div|altpll:altpll_component
+ 24. Parameter Settings for User Entity Instance: processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: processor:myprocessor|imem:myimem|altsyncram:altsyncram_component
+ 26. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2
+ 27. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
+ 28. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
+ 29. Parameter Settings for User Entity Instance: vga_controller:vga_ins
+ 30. Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins
+ 31. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component
+ 32. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component
+ 33. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod0
+ 34. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Div0
+ 35. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod1
+ 36. altpll Parameter Settings by Entity Instance
+ 37. altsyncram Parameter Settings by Entity Instance
+ 38. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+ 39. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
+ 40. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
+ 41. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
+ 42. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
+ 43. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
+ 44. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
+ 45. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
+ 46. Port Connectivity Checks: "PS2_Interface:myps2"
+ 47. Port Connectivity Checks: "processor:myprocessor|imem:myimem"
+ 48. Port Connectivity Checks: "processor:myprocessor|dmem:mydmem"
+ 49. Port Connectivity Checks: "pll:div"
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
+ 53. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -82,16 +85,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 02 15:11:19 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 14 13:59:13 2023       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,523                                       ;
-;     Total combinational functions  ; 1,393                                       ;
-;     Dedicated logic registers      ; 449                                         ;
-; Total registers                    ; 449                                         ;
-; Total pins                         ; 158                                         ;
+; Total logic elements               ; 2,158                                       ;
+;     Total combinational functions  ; 2,141                                       ;
+;     Dedicated logic registers      ; 211                                         ;
+; Total registers                    ; 211                                         ;
+; Total pins                         ; 146                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,463,744                                   ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -204,8 +207,7 @@ agreement for further details.
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-10        ;   0.0%      ;
+;     Processors 8-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -214,33 +216,32 @@ agreement for further details.
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
-; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/ECE550/rec_07_08/imem.mif                                                 ;         ;
-; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/ECE550/rec_07_08/dmem.mif                                                 ;         ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/ECE550/rec_07_08/VGA_Audio_PLL.v                                          ;         ;
-; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/Reset_Delay.v                                            ;         ;
-; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/skeleton.v                                               ;         ;
-; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/PS2_Interface.v                                          ;         ;
-; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/PS2_Controller.v                                         ;         ;
-; processor.v                      ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/processor.v                                              ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/ECE550/rec_07_08/pll.v                                                    ;         ;
-; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; C:/ECE550/rec_07_08/lcd.sv                                                   ;         ;
-; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/ECE550/rec_07_08/imem.v                                                   ;         ;
-; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/Hexadecimal_To_Seven_Segment.v                           ;         ;
-; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/ECE550/rec_07_08/dmem.v                                                   ;         ;
-; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/Altera_UP_PS2_Data_In.v                                  ;         ;
-; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/Altera_UP_PS2_Command_Out.v                              ;         ;
-; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/vga_controller.v                                         ;         ;
-; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/ECE550/rec_07_08/video_sync_generator.v                                   ;         ;
-; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/ECE550/rec_07_08/img_index.v                                              ;         ;
-; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/ECE550/rec_07_08/img_data.v                                               ;         ;
-; reci8_img_index.mif              ; yes             ; User Memory Initialization File  ; C:/ECE550/rec_07_08/reci8_img_index.mif                                      ;         ;
-; reci8_img_data.mif               ; yes             ; User Memory Initialization File  ; C:/ECE550/rec_07_08/reci8_img_data.mif                                       ;         ;
+; bg_img_index.mif                 ; yes             ; User Memory Initialization File  ; C:/ECE550/PC6/bg_img_index.mif                                               ;         ;
+; bg_img_data.mif                  ; yes             ; User Memory Initialization File  ; C:/ECE550/PC6/bg_img_data.mif                                                ;         ;
+; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/ECE550/PC6/imem.mif                                                       ;         ;
+; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/ECE550/PC6/dmem.mif                                                       ;         ;
+; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/ECE550/PC6/VGA_Audio_PLL.v                                                ;         ;
+; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/Reset_Delay.v                                                  ;         ;
+; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/skeleton.v                                                     ;         ;
+; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/PS2_Interface.v                                                ;         ;
+; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/PS2_Controller.v                                               ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/processor.v                                                    ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/ECE550/PC6/pll.v                                                          ;         ;
+; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/ECE550/PC6/imem.v                                                         ;         ;
+; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/Hexadecimal_To_Seven_Segment.v                                 ;         ;
+; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/ECE550/PC6/dmem.v                                                         ;         ;
+; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/Altera_UP_PS2_Data_In.v                                        ;         ;
+; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/Altera_UP_PS2_Command_Out.v                                    ;         ;
+; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/vga_controller.v                                               ;         ;
+; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/ECE550/PC6/video_sync_generator.v                                         ;         ;
+; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/ECE550/PC6/img_index.v                                                    ;         ;
+; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/ECE550/PC6/img_data.v                                                     ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf            ;         ;
 ; aglobal170.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc        ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
 ; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
 ; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/pll_altpll.v                                          ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/pll_altpll.v                                                ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -249,21 +250,24 @@ agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf                                   ;         ;
-; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf                                   ;         ;
-; db/altsyncram_3oc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/altsyncram_3oc1.tdf                                   ;         ;
-; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/decode_aaa.tdf                                        ;         ;
-; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/mux_1pb.tdf                                           ;         ;
-; db/altsyncram_enc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/altsyncram_enc1.tdf                                   ;         ;
+; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/altsyncram_8vc1.tdf                                         ;         ;
+; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/altsyncram_2m81.tdf                                         ;         ;
+; db/altsyncram_hfc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/altsyncram_hfc1.tdf                                         ;         ;
+; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/decode_aaa.tdf                                              ;         ;
+; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/mux_1pb.tdf                                                 ;         ;
+; db/altsyncram_sec1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/altsyncram_sec1.tdf                                         ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf        ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc       ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc   ;         ;
-; db/lpm_divide_lcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/lpm_divide_lcm.tdf                                    ;         ;
-; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/sign_div_unsign_anh.tdf                               ;         ;
-; db/alt_u_div_8af.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/alt_u_div_8af.tdf                                     ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/add_sub_7pc.tdf                                       ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/add_sub_8pc.tdf                                       ;         ;
-; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/rec_07_08/db/lpm_divide_ikm.tdf                                    ;         ;
+; db/lpm_divide_lcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/lpm_divide_lcm.tdf                                          ;         ;
+; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/sign_div_unsign_anh.tdf                                     ;         ;
+; db/alt_u_div_8af.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/alt_u_div_8af.tdf                                           ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/add_sub_7pc.tdf                                             ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/add_sub_8pc.tdf                                             ;         ;
+; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/lpm_divide_ikm.tdf                                          ;         ;
+; db/lpm_divide_pcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/lpm_divide_pcm.tdf                                          ;         ;
+; db/sign_div_unsign_enh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/sign_div_unsign_enh.tdf                                     ;         ;
+; db/alt_u_div_gaf.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/ECE550/PC6/db/alt_u_div_gaf.tdf                                           ;         ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -272,23 +276,23 @@ agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 1,523                                          ;
+; Estimated Total logic elements              ; 2,158                                          ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 1393                                           ;
+; Total combinational functions               ; 2141                                           ;
 ; Logic element usage by number of LUT inputs ;                                                ;
-;     -- 4 input functions                    ; 722                                            ;
-;     -- 3 input functions                    ; 204                                            ;
-;     -- <=2 input functions                  ; 467                                            ;
+;     -- 4 input functions                    ; 745                                            ;
+;     -- 3 input functions                    ; 448                                            ;
+;     -- <=2 input functions                  ; 948                                            ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 1148                                           ;
-;     -- arithmetic mode                      ; 245                                            ;
+;     -- normal mode                          ; 1589                                           ;
+;     -- arithmetic mode                      ; 552                                            ;
 ;                                             ;                                                ;
-; Total registers                             ; 449                                            ;
-;     -- Dedicated logic registers            ; 449                                            ;
+; Total registers                             ; 211                                            ;
+;     -- Dedicated logic registers            ; 211                                            ;
 ;     -- I/O registers                        ; 0                                              ;
 ;                                             ;                                                ;
-; I/O pins                                    ; 158                                            ;
+; I/O pins                                    ; 146                                            ;
 ; Total memory bits                           ; 2463744                                        ;
 ;                                             ;                                                ;
 ; Embedded Multiplier 9-bit elements          ; 0                                              ;
@@ -297,9 +301,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1                                              ;
 ;                                             ;                                                ;
 ; Maximum fan-out node                        ; VGA_Audio_PLL:p1|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 442                                            ;
-; Total fan-out                               ; 10950                                          ;
-; Average fan-out                             ; 4.40                                           ;
+; Maximum fan-out                             ; 482                                            ;
+; Total fan-out                               ; 11789                                          ;
+; Average fan-out                             ; 3.96                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -308,7 +312,7 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                           ; Entity Name                  ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |skeleton                                    ; 1393 (0)            ; 449 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 158  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
+; |skeleton                                    ; 2141 (0)            ; 211 (0)                   ; 2463744     ; 0            ; 0       ; 0         ; 146  ; 0            ; |skeleton                                                                                                                                     ; skeleton                     ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex2|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                   ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |PS2_Interface:myps2|                     ; 48 (16)             ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                 ; PS2_Interface                ; work         ;
@@ -317,37 +321,40 @@ agreement for further details.
 ;    |Reset_Delay:r0|                          ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Reset_Delay:r0                                                                                                                      ; Reset_Delay                  ; work         ;
 ;    |VGA_Audio_PLL:p1|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                    ; VGA_Audio_PLL                ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                            ; altpll                       ; work         ;
-;    |lcd:mylcd|                               ; 392 (392)           ; 278 (278)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                           ; lcd                          ; work         ;
-;    |vga_controller:vga_ins|                  ; 912 (148)           ; 112 (82)                  ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
+;    |vga_controller:vga_ins|                  ; 2052 (472)          ; 152 (122)                 ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                              ; vga_controller               ; work         ;
 ;       |img_data:img_data_inst|               ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst                                                                                       ; img_data                     ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 278 (0)             ; 6 (0)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component                                                       ; altsyncram                   ; work         ;
-;             |altsyncram_3oc1:auto_generated| ; 278 (0)             ; 6 (6)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated                        ; altsyncram_3oc1              ; work         ;
-;                |decode_aaa:rden_decode|      ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|decode_aaa:rden_decode ; decode_aaa                   ; work         ;
-;                |mux_1pb:mux2|                ; 234 (234)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|mux_1pb:mux2           ; mux_1pb                      ; work         ;
+;             |altsyncram_hfc1:auto_generated| ; 278 (0)             ; 6 (6)                     ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated                        ; altsyncram_hfc1              ; work         ;
+;                |decode_aaa:rden_decode|      ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated|decode_aaa:rden_decode ; decode_aaa                   ; work         ;
+;                |mux_1pb:mux2|                ; 234 (234)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated|mux_1pb:mux2           ; mux_1pb                      ; work         ;
 ;       |img_index:img_index_inst|             ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst                                                                                     ; img_index                    ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component                                                     ; altsyncram                   ; work         ;
-;             |altsyncram_enc1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated                      ; altsyncram_enc1              ; work         ;
-;       |lpm_divide:Div0|                      ; 202 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0                                                                                              ; lpm_divide                   ; work         ;
-;          |lpm_divide_ikm:auto_generated|     ; 202 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                                ; lpm_divide_ikm               ; work         ;
-;             |sign_div_unsign_anh:divider|    ; 202 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh          ; work         ;
-;                |alt_u_div_8af:divider|       ; 202 (202)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af                ; work         ;
-;       |lpm_divide:Mod0|                      ; 240 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0                                                                                              ; lpm_divide                   ; work         ;
-;          |lpm_divide_lcm:auto_generated|     ; 240 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated                                                                ; lpm_divide_lcm               ; work         ;
-;             |sign_div_unsign_anh:divider|    ; 240 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh          ; work         ;
-;                |alt_u_div_8af:divider|       ; 240 (240)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af                ; work         ;
+;             |altsyncram_sec1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_sec1:auto_generated                      ; altsyncram_sec1              ; work         ;
+;       |lpm_divide:Div0|                      ; 220 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0                                                                                              ; lpm_divide                   ; work         ;
+;          |lpm_divide_ikm:auto_generated|     ; 220 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                                ; lpm_divide_ikm               ; work         ;
+;             |sign_div_unsign_anh:divider|    ; 220 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh          ; work         ;
+;                |alt_u_div_8af:divider|       ; 220 (220)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af                ; work         ;
+;       |lpm_divide:Mod0|                      ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0                                                                                              ; lpm_divide                   ; work         ;
+;          |lpm_divide_lcm:auto_generated|     ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated                                                                ; lpm_divide_lcm               ; work         ;
+;             |sign_div_unsign_anh:divider|    ; 292 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider                                    ; sign_div_unsign_anh          ; work         ;
+;                |alt_u_div_8af:divider|       ; 292 (292)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider              ; alt_u_div_8af                ; work         ;
+;       |lpm_divide:Mod1|                      ; 746 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1                                                                                              ; lpm_divide                   ; work         ;
+;          |lpm_divide_pcm:auto_generated|     ; 746 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated                                                                ; lpm_divide_pcm               ; work         ;
+;             |sign_div_unsign_enh:divider|    ; 746 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated|sign_div_unsign_enh:divider                                    ; sign_div_unsign_enh          ; work         ;
+;                |alt_u_div_gaf:divider|       ; 746 (746)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|lpm_divide:Mod1|lpm_divide_pcm:auto_generated|sign_div_unsign_enh:divider|alt_u_div_gaf:divider              ; alt_u_div_gaf                ; work         ;
 ;       |video_sync_generator:LTM_ins|         ; 44 (44)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|video_sync_generator:LTM_ins                                                                                 ; video_sync_generator         ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                    ;
-+---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+---------------------+
-; Name                                                                                                                      ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                 ;
-+---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+---------------------+
-; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|ALTSYNCRAM   ; M9K  ; ROM  ; 307200       ; 8            ; --           ; --           ; 2457600 ; reci8_img_data.mif  ;
-; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated|ALTSYNCRAM ; M9K  ; ROM  ; 256          ; 24           ; --           ; --           ; 6144    ; reci8_img_index.mif ;
-+---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+---------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+------------------+
+; Name                                                                                                                      ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF              ;
++---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+------------------+
+; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated|ALTSYNCRAM   ; M9K  ; ROM  ; 307200       ; 8            ; --           ; --           ; 2457600 ; bg_img_data.mif  ;
+; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_sec1:auto_generated|ALTSYNCRAM ; M9K  ; ROM  ; 256          ; 24           ; --           ; --           ; 6144    ; bg_img_index.mif ;
++---------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+---------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -359,6 +366,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; RAM: 1-PORT  ; 13.1    ; N/A          ; N/A          ; |skeleton|processor:myprocessor|dmem:mydmem ; dmem.v          ;
 ; Altera ; ROM: 1-PORT  ; 13.1    ; N/A          ; N/A          ; |skeleton|processor:myprocessor|imem:myimem ; imem.v          ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------+
+; State Machine - |skeleton|vga_controller:vga_ins|mv ;
++-------+-------+-------+-------+---------------------+
+; Name  ; mv.11 ; mv.10 ; mv.01 ; mv.00               ;
++-------+-------+-------+-------+---------------------+
+; mv.00 ; 0     ; 0     ; 0     ; 0                   ;
+; mv.01 ; 0     ; 0     ; 1     ; 1                   ;
+; mv.10 ; 0     ; 1     ; 0     ; 1                   ;
+; mv.11 ; 1     ; 0     ; 0     ; 1                   ;
++-------+-------+-------+-------+---------------------+
 
 
 Encoding Type:  One-Hot
@@ -412,44 +432,10 @@ Encoding Type:  One-Hot
 ; Register name                                                                                                                         ; Reason for Removal                                                                                          ;
 +---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[0..7]                                                                             ; Lost fanout                                                                                                 ;
-; lcd:mylcd|state2[2..30]                                                                                                               ; Merged with lcd:mylcd|state2[31]                                                                            ;
-; lcd:mylcd|state1[2..9,11..31]                                                                                                         ; Merged with lcd:mylcd|state1[10]                                                                            ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[1..7]                                    ; Merged with PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0] ;
-; lcd:mylcd|state2[31]                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0]                                       ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|state1[10]                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[10][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[11][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[8][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[9][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[14][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[15][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[12][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[13][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[2][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[3][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[0][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[1][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[6][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[7][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[4][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line2[5][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[1][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[0][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[3][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[2][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[5][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[4][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[7][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[6][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[9][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[8][7]                                                                                                                 ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[11][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[10][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[13][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[12][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[15][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
-; lcd:mylcd|line1[14][7]                                                                                                                ; Stuck at GND due to stuck port data_in                                                                      ;
+; vga_controller:vga_ins|mv~2                                                                                                           ; Lost fanout                                                                                                 ;
+; vga_controller:vga_ins|mv~3                                                                                                           ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver~2                                                                            ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver~3                                                                            ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter~2                                  ; Lost fanout                                                                                                 ;
@@ -476,7 +462,7 @@ Encoding Type:  One-Hot
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out                        ; Stuck at GND due to stuck port data_in                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[8]                                       ; Lost fanout                                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE                   ; Lost fanout                                                                                                 ;
-; Total Number of Removed Registers = 184                                                                                               ;                                                                                                             ;
+; Total Number of Removed Registers = 94                                                                                                ;                                                                                                             ;
 +---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
@@ -530,38 +516,6 @@ Encoding Type:  One-Hot
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[5],                                                                            ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[6],                                                                            ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[7]                                                                             ;
-; lcd:mylcd|line2[10][7]                                                                                                                ; Stuck at GND              ; lcd:mylcd|line1[10][7]                                                                                                             ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[11][7]                                                                                                                ; Stuck at GND              ; lcd:mylcd|line1[11][7]                                                                                                             ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[8][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[8][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[9][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[9][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[14][7]                                                                                                                ; Stuck at GND              ; lcd:mylcd|line1[14][7]                                                                                                             ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[15][7]                                                                                                                ; Stuck at GND              ; lcd:mylcd|line1[15][7]                                                                                                             ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[12][7]                                                                                                                ; Stuck at GND              ; lcd:mylcd|line1[12][7]                                                                                                             ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[13][7]                                                                                                                ; Stuck at GND              ; lcd:mylcd|line1[13][7]                                                                                                             ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[2][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[2][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[3][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[3][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[0][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[0][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[1][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[1][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[6][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[6][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[7][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[7][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[4][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[4][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
-; lcd:mylcd|line2[5][7]                                                                                                                 ; Stuck at GND              ; lcd:mylcd|line1[5][7]                                                                                                              ;
-;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_3_END_TRANSFER                                                     ; Stuck at GND              ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver.PS2_STATE_1_WAIT_FOR_DATA                  ;
 ;                                                                                                                                       ; due to stuck port data_in ;                                                                                                                                    ;
 +---------------------------------------------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -572,12 +526,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 449   ;
-; Number of registers using Synchronous Clear  ; 50    ;
+; Total registers                              ; 211   ;
+; Number of registers using Synchronous Clear  ; 78    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 318   ;
+; Number of registers using Asynchronous Clear ; 40    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 320   ;
+; Number of registers using Clock Enable       ; 155   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -587,39 +541,20 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; lcd:mylcd|line1[13][5]                  ; 1       ;
-; lcd:mylcd|line1[7][5]                   ; 1       ;
-; lcd:mylcd|line1[15][5]                  ; 1       ;
-; lcd:mylcd|line1[5][5]                   ; 1       ;
-; lcd:mylcd|line1[8][5]                   ; 1       ;
-; lcd:mylcd|line1[2][5]                   ; 1       ;
-; lcd:mylcd|line1[10][5]                  ; 1       ;
-; lcd:mylcd|line1[0][5]                   ; 1       ;
-; lcd:mylcd|line1[9][5]                   ; 1       ;
-; lcd:mylcd|line1[3][5]                   ; 1       ;
-; lcd:mylcd|line1[11][5]                  ; 1       ;
-; lcd:mylcd|line1[1][5]                   ; 1       ;
-; lcd:mylcd|line1[6][5]                   ; 1       ;
-; lcd:mylcd|line1[12][5]                  ; 1       ;
-; lcd:mylcd|line1[14][5]                  ; 1       ;
-; lcd:mylcd|line1[4][5]                   ; 1       ;
-; lcd:mylcd|line2[9][5]                   ; 3       ;
-; lcd:mylcd|line2[11][5]                  ; 3       ;
-; lcd:mylcd|line2[15][5]                  ; 3       ;
-; lcd:mylcd|line2[13][5]                  ; 3       ;
-; lcd:mylcd|line2[0][5]                   ; 3       ;
-; lcd:mylcd|line2[2][5]                   ; 3       ;
-; lcd:mylcd|line2[6][5]                   ; 3       ;
-; lcd:mylcd|line2[4][5]                   ; 3       ;
-; lcd:mylcd|line2[8][5]                   ; 3       ;
-; lcd:mylcd|line2[10][5]                  ; 3       ;
-; lcd:mylcd|line2[14][5]                  ; 3       ;
-; lcd:mylcd|line2[12][5]                  ; 3       ;
-; lcd:mylcd|line2[1][5]                   ; 3       ;
-; lcd:mylcd|line2[3][5]                   ; 3       ;
-; lcd:mylcd|line2[7][5]                   ; 3       ;
-; lcd:mylcd|line2[5][5]                   ; 3       ;
-; Total number of inverted registers = 32 ;         ;
+; vga_controller:vga_ins|ball_x[8]        ; 3       ;
+; vga_controller:vga_ins|ball_x[6]        ; 3       ;
+; vga_controller:vga_ins|ball_x[4]        ; 3       ;
+; vga_controller:vga_ins|ball_x[2]        ; 3       ;
+; vga_controller:vga_ins|ball_y[8]        ; 7       ;
+; vga_controller:vga_ins|ball_y[4]        ; 7       ;
+; vga_controller:vga_ins|ball_y[3]        ; 7       ;
+; vga_controller:vga_ins|p2y[8]           ; 9       ;
+; vga_controller:vga_ins|p2y[4]           ; 12      ;
+; vga_controller:vga_ins|p2y[3]           ; 7       ;
+; vga_controller:vga_ins|p1y[8]           ; 10      ;
+; vga_controller:vga_ins|p1y[4]           ; 12      ;
+; vga_controller:vga_ins|p1y[3]           ; 7       ;
+; Total number of inverted registers = 13 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -628,35 +563,24 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[0]                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][3]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][7]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][7]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][7]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][6]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][4]                                                                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][7]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][7]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][0]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][1]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][1]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][4]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][2]                                                                                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[0]                                                                                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|mstart                                                                                             ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[3]                                                                                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[1]                   ;
 ; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[7]         ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[3] ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[6]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[3]                  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[2]                       ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[8] ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[8]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[3]                       ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[3]                                                                    ;
 ; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[7]                                                                    ;
-; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[7]                                                                                        ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 21 LEs               ; 7 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p2y[9]                                                                                ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 21 LEs               ; 7 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p1y[5]                                                                                ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_y[2]                                                                             ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_x[9]                                                                             ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p2y[8]                                                                                ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|p1y[3]                                                                                ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|ball_y[4]                                                                             ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |skeleton|vga_controller:vga_ins|ball_x[8]                                                                             ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |skeleton|vga_controller:vga_ins|mv                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -679,7 +603,7 @@ Encoding Type:  One-Hot
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated ;
+; Source assignments for vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                    ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------+
@@ -688,7 +612,7 @@ Encoding Type:  One-Hot
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated ;
+; Source assignments for vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_sec1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                      ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------+
@@ -1602,6 +1526,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vga_controller:vga_ins ;
++----------------+------------+---------------------------------------+
+; Parameter Name ; Value      ; Type                                  ;
++----------------+------------+---------------------------------------+
+; r              ; 0000000111 ; Unsigned Binary                       ;
++----------------+------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: vga_controller:vga_ins|video_sync_generator:LTM_ins ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -1662,7 +1596,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                        ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                        ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                        ;
-; INIT_FILE                          ; reci8_img_data.mif   ; Untyped                                                        ;
+; INIT_FILE                          ; bg_img_data.mif      ; Untyped                                                        ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                        ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                        ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                        ;
@@ -1675,7 +1609,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                        ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                        ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                        ;
-; CBXI_PARAMETER                     ; altsyncram_3oc1      ; Untyped                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_hfc1      ; Untyped                                                        ;
 +------------------------------------+----------------------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1723,7 +1657,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                          ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                          ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                          ;
-; INIT_FILE                          ; reci8_img_index.mif  ; Untyped                                                          ;
+; INIT_FILE                          ; bg_img_index.mif     ; Untyped                                                          ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                          ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                          ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                          ;
@@ -1736,7 +1670,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                          ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                          ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                          ;
-; CBXI_PARAMETER                     ; altsyncram_enc1      ; Untyped                                                          ;
+; CBXI_PARAMETER                     ; altsyncram_sec1      ; Untyped                                                          ;
 +------------------------------------+----------------------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1777,6 +1711,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
 ; CBXI_PARAMETER         ; lpm_divide_ikm ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                       ;
+; LPM_WIDTHD             ; 19             ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_pcm ; Untyped                                       ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
@@ -1929,15 +1886,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+-------------------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "lcd:mylcd"      ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; write_en ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"                                                                                                                               ;
 +-------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2000,32 +1948,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 158                         ;
-; cycloneiii_ff         ; 449                         ;
-;     CLR               ; 45                          ;
+; boundary_port         ; 146                         ;
+; cycloneiii_ff         ; 211                         ;
+;     CLR               ; 11                          ;
 ;     CLR SCLR          ; 19                          ;
-;     ENA               ; 59                          ;
-;     ENA CLR           ; 236                         ;
-;     ENA CLR SCLR      ; 18                          ;
-;     ENA SCLR          ; 7                           ;
+;     ENA               ; 92                          ;
+;     ENA CLR           ; 10                          ;
+;     ENA SCLR          ; 53                          ;
 ;     SCLR              ; 6                           ;
-;     plain             ; 59                          ;
+;     plain             ; 20                          ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 1397                        ;
-;     arith             ; 245                         ;
-;         2 data inputs ; 118                         ;
-;         3 data inputs ; 127                         ;
-;     normal            ; 1152                        ;
-;         0 data inputs ; 24                          ;
+; cycloneiii_lcell_comb ; 2145                        ;
+;     arith             ; 552                         ;
+;         2 data inputs ; 184                         ;
+;         3 data inputs ; 368                         ;
+;     normal            ; 1593                        ;
+;         0 data inputs ; 41                          ;
 ;         1 data inputs ; 11                          ;
-;         2 data inputs ; 318                         ;
-;         3 data inputs ; 77                          ;
-;         4 data inputs ; 722                         ;
+;         2 data inputs ; 716                         ;
+;         3 data inputs ; 80                          ;
+;         4 data inputs ; 745                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 328                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 27.30                       ;
-; Average LUT depth     ; 9.18                        ;
+; Max LUT depth         ; 49.80                       ;
+; Average LUT depth     ; 23.44                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2034,7 +1981,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -2044,55 +1991,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 02 15:11:09 2023
+    Info: Processing started: Thu Dec 14 13:59:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_audio_pll.v
-    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/ECE550/rec_07_08/VGA_Audio_PLL.v Line: 39
+    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/ECE550/PC6/VGA_Audio_PLL.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file reset_delay.v
-    Info (12023): Found entity 1: Reset_Delay File: C:/ECE550/rec_07_08/Reset_Delay.v Line: 1
+    Info (12023): Found entity 1: Reset_Delay File: C:/ECE550/PC6/Reset_Delay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
-    Info (12023): Found entity 1: skeleton File: C:/ECE550/rec_07_08/skeleton.v Line: 1
+    Info (12023): Found entity 1: skeleton File: C:/ECE550/PC6/skeleton.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_interface.v
-    Info (12023): Found entity 1: PS2_Interface File: C:/ECE550/rec_07_08/PS2_Interface.v Line: 1
+    Info (12023): Found entity 1: PS2_Interface File: C:/ECE550/PC6/PS2_Interface.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_controller.v
-    Info (12023): Found entity 1: PS2_Controller File: C:/ECE550/rec_07_08/PS2_Controller.v Line: 9
+    Info (12023): Found entity 1: PS2_Controller File: C:/ECE550/PC6/PS2_Controller.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
-    Info (12023): Found entity 1: processor File: C:/ECE550/rec_07_08/processor.v Line: 1
+    Info (12023): Found entity 1: processor File: C:/ECE550/PC6/processor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: C:/ECE550/rec_07_08/pll.v Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file lcd.sv
-    Info (12023): Found entity 1: lcd File: C:/ECE550/rec_07_08/lcd.sv Line: 1
+    Info (12023): Found entity 1: pll File: C:/ECE550/PC6/pll.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file imem.v
-    Info (12023): Found entity 1: imem File: C:/ECE550/rec_07_08/imem.v Line: 39
+    Info (12023): Found entity 1: imem File: C:/ECE550/PC6/imem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file hexadecimal_to_seven_segment.v
-    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/ECE550/rec_07_08/Hexadecimal_To_Seven_Segment.v Line: 9
+    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/ECE550/PC6/Hexadecimal_To_Seven_Segment.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/ECE550/rec_07_08/dmem.v Line: 39
+    Info (12023): Found entity 1: dmem File: C:/ECE550/PC6/dmem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_data_in.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/ECE550/rec_07_08/Altera_UP_PS2_Data_In.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/ECE550/PC6/Altera_UP_PS2_Data_In.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_command_out.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/ECE550/rec_07_08/Altera_UP_PS2_Command_Out.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/ECE550/PC6/Altera_UP_PS2_Command_Out.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
-    Info (12023): Found entity 1: vga_controller File: C:/ECE550/rec_07_08/vga_controller.v Line: 1
+    Info (12023): Found entity 1: vga_controller File: C:/ECE550/PC6/vga_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.v
-    Info (12023): Found entity 1: video_sync_generator File: C:/ECE550/rec_07_08/video_sync_generator.v Line: 1
+    Info (12023): Found entity 1: video_sync_generator File: C:/ECE550/PC6/video_sync_generator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file img_index.v
-    Info (12023): Found entity 1: img_index File: C:/ECE550/rec_07_08/img_index.v Line: 40
+    Info (12023): Found entity 1: img_index File: C:/ECE550/PC6/img_index.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file img_data.v
-    Info (12023): Found entity 1: img_data File: C:/ECE550/rec_07_08/img_data.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(54): created implicit net for "inclock" File: C:/ECE550/rec_07_08/skeleton.v Line: 54
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(85): created implicit net for "DLY_RST" File: C:/ECE550/rec_07_08/skeleton.v Line: 85
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(86): created implicit net for "VGA_CTRL_CLK" File: C:/ECE550/rec_07_08/skeleton.v Line: 86
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(86): created implicit net for "AUD_CTRL_CLK" File: C:/ECE550/rec_07_08/skeleton.v Line: 86
-Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/ECE550/rec_07_08/processor.v Line: 29
+    Info (12023): Found entity 1: img_data File: C:/ECE550/PC6/img_data.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(51): created implicit net for "inclock" File: C:/ECE550/PC6/skeleton.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(77): created implicit net for "DLY_RST" File: C:/ECE550/PC6/skeleton.v Line: 77
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(78): created implicit net for "VGA_CTRL_CLK" File: C:/ECE550/PC6/skeleton.v Line: 78
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(78): created implicit net for "AUD_CTRL_CLK" File: C:/ECE550/PC6/skeleton.v Line: 78
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/ECE550/PC6/processor.v Line: 29
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Warning (10034): Output port "VGA_SYNC" at skeleton.v(25) has no driver File: C:/ECE550/rec_07_08/skeleton.v Line: 25
-Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/ECE550/rec_07_08/skeleton.v Line: 54
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/ECE550/rec_07_08/pll.v Line: 90
-Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/ECE550/rec_07_08/pll.v Line: 90
-Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/ECE550/rec_07_08/pll.v Line: 90
+Warning (10034): Output port "leds" at skeleton.v(36) has no driver File: C:/ECE550/PC6/skeleton.v Line: 36
+Warning (10034): Output port "VGA_SYNC" at skeleton.v(25) has no driver File: C:/ECE550/PC6/skeleton.v Line: 25
+Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/ECE550/PC6/skeleton.v Line: 51
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/ECE550/PC6/pll.v Line: 90
+Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/ECE550/PC6/pll.v Line: 90
+Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/ECE550/PC6/pll.v Line: 90
     Info (12134): Parameter "clk0_divide_by" = "5"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "2"
@@ -2144,13 +2090,13 @@ Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with t
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: C:/ECE550/rec_07_08/db/pll_altpll.v Line: 30
+    Info (12023): Found entity 1: pll_altpll File: C:/ECE550/PC6/db/pll_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:div|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/ECE550/rec_07_08/skeleton.v Line: 61
-Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/ECE550/rec_07_08/processor.v Line: 32
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/dmem.v Line: 85
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/dmem.v Line: 85
-Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/rec_07_08/dmem.v Line: 85
+Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/ECE550/PC6/skeleton.v Line: 58
+Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/ECE550/PC6/processor.v Line: 32
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/ECE550/PC6/dmem.v Line: 85
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/ECE550/PC6/dmem.v Line: 85
+Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/PC6/dmem.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "dmem.mif"
@@ -2166,12 +2112,12 @@ Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8vc1.tdf
-    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_8vc1" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/ECE550/rec_07_08/processor.v Line: 38
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/imem.v Line: 84
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/imem.v Line: 84
-Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/rec_07_08/imem.v Line: 84
+Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/ECE550/PC6/processor.v Line: 38
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/ECE550/PC6/imem.v Line: 84
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/ECE550/PC6/imem.v Line: 84
+Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/PC6/imem.v Line: 84
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "imem.mif"
@@ -2186,21 +2132,20 @@ Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2m81.tdf
-    Info (12023): Found entity 1: altsyncram_2m81 File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_2m81 File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 32
-Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/ECE550/rec_07_08/skeleton.v Line: 64
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/ECE550/rec_07_08/PS2_Interface.v Line: 36
-Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/ECE550/rec_07_08/PS2_Controller.v Line: 248
-Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/ECE550/rec_07_08/PS2_Controller.v Line: 268
-Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/ECE550/rec_07_08/skeleton.v Line: 67
-Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/ECE550/rec_07_08/skeleton.v Line: 70
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/ECE550/rec_07_08/skeleton.v Line: 85
-Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/ECE550/rec_07_08/Reset_Delay.v Line: 10
-Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/ECE550/rec_07_08/skeleton.v Line: 86
-Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/ECE550/rec_07_08/VGA_Audio_PLL.v Line: 107
-Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/ECE550/rec_07_08/VGA_Audio_PLL.v Line: 107
-Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/ECE550/rec_07_08/VGA_Audio_PLL.v Line: 107
+Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 32
+Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/ECE550/PC6/skeleton.v Line: 61
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/ECE550/PC6/PS2_Interface.v Line: 36
+Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/ECE550/PC6/PS2_Controller.v Line: 248
+Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/ECE550/PC6/PS2_Controller.v Line: 268
+Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/ECE550/PC6/skeleton.v Line: 64
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/ECE550/PC6/skeleton.v Line: 77
+Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/ECE550/PC6/Reset_Delay.v Line: 10
+Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/ECE550/PC6/skeleton.v Line: 78
+Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/ECE550/PC6/VGA_Audio_PLL.v Line: 107
+Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/ECE550/PC6/VGA_Audio_PLL.v Line: 107
+Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/ECE550/PC6/VGA_Audio_PLL.v Line: 107
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
@@ -2259,28 +2204,41 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/ECE550/rec_07_08/skeleton.v Line: 98
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(49): truncated value with size 32 to match size of target (19) File: C:/ECE550/rec_07_08/vga_controller.v Line: 49
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(50): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/vga_controller.v Line: 50
-Critical Warning (10237): Verilog HDL warning at vga_controller.v(50): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/rec_07_08/vga_controller.v Line: 50
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(51): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/vga_controller.v Line: 51
-Critical Warning (10237): Verilog HDL warning at vga_controller.v(51): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/rec_07_08/vga_controller.v Line: 51
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(98): truncated value with size 32 to match size of target (16) File: C:/ECE550/rec_07_08/vga_controller.v Line: 98
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(103): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/vga_controller.v Line: 103
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(107): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/vga_controller.v Line: 107
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(111): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/vga_controller.v Line: 111
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(115): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/vga_controller.v Line: 115
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/ECE550/rec_07_08/vga_controller.v Line: 39
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/ECE550/rec_07_08/video_sync_generator.v Line: 77
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/ECE550/rec_07_08/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/ECE550/rec_07_08/vga_controller.v Line: 60
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/img_data.v Line: 81
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/img_data.v Line: 81
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/rec_07_08/img_data.v Line: 81
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/ECE550/PC6/skeleton.v Line: 91
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(108): object "btemp_x" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 108
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(109): object "btemp_y" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 109
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(115): object "slow_count" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 115
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(116): object "fast_count" assigned a value but never read File: C:/ECE550/PC6/vga_controller.v Line: 116
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(52): truncated value with size 32 to match size of target (19) File: C:/ECE550/PC6/vga_controller.v Line: 52
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(53): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 53
+Critical Warning (10237): Verilog HDL warning at vga_controller.v(53): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/PC6/vga_controller.v Line: 53
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(54): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 54
+Critical Warning (10237): Verilog HDL warning at vga_controller.v(54): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/ECE550/PC6/vga_controller.v Line: 54
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(146): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 146
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(152): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 152
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(172): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 172
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(178): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 178
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(207): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 207
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(208): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 208
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(212): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 212
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(213): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 213
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(217): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 217
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(218): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 218
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(222): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 222
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(223): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/vga_controller.v Line: 223
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(246): truncated value with size 32 to match size of target (4) File: C:/ECE550/PC6/vga_controller.v Line: 246
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(263): truncated value with size 32 to match size of target (4) File: C:/ECE550/PC6/vga_controller.v Line: 263
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/ECE550/PC6/vga_controller.v Line: 42
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/ECE550/PC6/video_sync_generator.v Line: 77
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/ECE550/PC6/video_sync_generator.v Line: 80
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/ECE550/PC6/vga_controller.v Line: 63
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_data.v Line: 81
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_data.v Line: 81
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/PC6/img_data.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "reci8_img_data.mif"
+    Info (12134): Parameter "init_file" = "bg_img_data.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -2292,23 +2250,23 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_dat
     Info (12134): Parameter "widthad_a" = "19"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3oc1.tdf
-    Info (12023): Found entity 1: altsyncram_3oc1 File: C:/ECE550/rec_07_08/db/altsyncram_3oc1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_3oc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hfc1.tdf
+    Info (12023): Found entity 1: altsyncram_hfc1 File: C:/ECE550/PC6/db/altsyncram_hfc1.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_hfc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_aaa.tdf
-    Info (12023): Found entity 1: decode_aaa File: C:/ECE550/rec_07_08/db/decode_aaa.tdf Line: 23
-Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|decode_aaa:rden_decode" File: C:/ECE550/rec_07_08/db/altsyncram_3oc1.tdf Line: 40
+    Info (12023): Found entity 1: decode_aaa File: C:/ECE550/PC6/db/decode_aaa.tdf Line: 23
+Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated|decode_aaa:rden_decode" File: C:/ECE550/PC6/db/altsyncram_hfc1.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
-    Info (12023): Found entity 1: mux_1pb File: C:/ECE550/rec_07_08/db/mux_1pb.tdf Line: 23
-Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_3oc1:auto_generated|mux_1pb:mux2" File: C:/ECE550/rec_07_08/db/altsyncram_3oc1.tdf Line: 41
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/ECE550/rec_07_08/vga_controller.v Line: 70
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/img_index.v Line: 82
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/ECE550/rec_07_08/img_index.v Line: 82
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/rec_07_08/img_index.v Line: 82
+    Info (12023): Found entity 1: mux_1pb File: C:/ECE550/PC6/db/mux_1pb.tdf Line: 23
+Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_hfc1:auto_generated|mux_1pb:mux2" File: C:/ECE550/PC6/db/altsyncram_hfc1.tdf Line: 41
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/ECE550/PC6/vga_controller.v Line: 73
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_index.v Line: 82
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/ECE550/PC6/img_index.v Line: 82
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE550/PC6/img_index.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "reci8_img_index.mif"
+    Info (12134): Parameter "init_file" = "bg_img_index.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -2320,224 +2278,239 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_in
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "24"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_enc1.tdf
-    Info (12023): Found entity 1: altsyncram_enc1 File: C:/ECE550/rec_07_08/db/altsyncram_enc1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_enc1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_enc1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sec1.tdf
+    Info (12023): Found entity 1: altsyncram_sec1 File: C:/ECE550/PC6/db/altsyncram_sec1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_sec1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_sec1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 36
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 56
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 76
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 96
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 116
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 136
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 156
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 176
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 196
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 216
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 236
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 256
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 276
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 296
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 316
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 336
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 356
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 376
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 396
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 416
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 436
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 456
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 476
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 496
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 516
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 536
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 556
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 576
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 596
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 616
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 636
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/ECE550/rec_07_08/db/altsyncram_2m81.tdf Line: 656
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 37
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 61
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 85
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 109
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 133
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 157
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 181
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 205
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 229
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 253
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 277
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 301
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 325
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 349
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 373
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 397
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 421
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 445
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 469
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 493
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 517
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 541
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 565
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 589
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 613
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 637
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 661
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 685
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 709
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 733
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 757
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/ECE550/rec_07_08/db/altsyncram_8vc1.tdf Line: 781
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 36
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 56
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 76
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 96
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 116
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 136
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 156
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 176
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 196
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 216
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 236
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 256
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 276
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 296
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 316
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 336
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 356
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 376
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 396
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 416
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 436
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 456
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 476
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 496
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 516
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 536
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 556
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 576
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 596
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 616
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 636
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/ECE550/PC6/db/altsyncram_2m81.tdf Line: 656
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 37
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 61
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 85
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 109
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 133
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 157
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 181
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 205
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 229
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 253
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 277
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 301
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 325
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 349
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 373
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 397
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 421
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 445
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 469
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 493
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 517
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 541
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 565
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 589
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 613
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 637
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 661
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 685
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 709
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 733
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 757
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/ECE550/PC6/db/altsyncram_8vc1.tdf Line: 781
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/ECE550/rec_07_08/db/pll_altpll.v Line: 78
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/ECE550/rec_07_08/vga_controller.v Line: 50
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/ECE550/rec_07_08/vga_controller.v Line: 51
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/ECE550/rec_07_08/vga_controller.v Line: 50
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/ECE550/rec_07_08/vga_controller.v Line: 50
+        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/ECE550/PC6/db/pll_altpll.v Line: 78
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod0" File: C:/ECE550/PC6/vga_controller.v Line: 53
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Div0" File: C:/ECE550/PC6/vga_controller.v Line: 54
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|Mod1" File: C:/ECE550/PC6/vga_controller.v Line: 139
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod0" File: C:/ECE550/PC6/vga_controller.v Line: 53
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod0" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 53
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lcm.tdf
-    Info (12023): Found entity 1: lpm_divide_lcm File: C:/ECE550/rec_07_08/db/lpm_divide_lcm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_lcm File: C:/ECE550/PC6/db/lpm_divide_lcm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_anh File: C:/ECE550/rec_07_08/db/sign_div_unsign_anh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_anh File: C:/ECE550/PC6/db/sign_div_unsign_anh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8af.tdf
-    Info (12023): Found entity 1: alt_u_div_8af File: C:/ECE550/rec_07_08/db/alt_u_div_8af.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_8af File: C:/ECE550/PC6/db/alt_u_div_8af.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/ECE550/rec_07_08/db/add_sub_7pc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_7pc File: C:/ECE550/PC6/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/ECE550/rec_07_08/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/ECE550/rec_07_08/vga_controller.v Line: 51
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/ECE550/rec_07_08/vga_controller.v Line: 51
+    Info (12023): Found entity 1: add_sub_8pc File: C:/ECE550/PC6/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Div0" File: C:/ECE550/PC6/vga_controller.v Line: 54
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Div0" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 54
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
-    Info (12023): Found entity 1: lpm_divide_ikm File: C:/ECE550/rec_07_08/db/lpm_divide_ikm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_ikm File: C:/ECE550/PC6/db/lpm_divide_ikm.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|lpm_divide:Mod1" File: C:/ECE550/PC6/vga_controller.v Line: 139
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|lpm_divide:Mod1" with the following parameter: File: C:/ECE550/PC6/vga_controller.v Line: 139
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "19"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_pcm.tdf
+    Info (12023): Found entity 1: lpm_divide_pcm File: C:/ECE550/PC6/db/lpm_divide_pcm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_enh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_enh File: C:/ECE550/PC6/db/sign_div_unsign_enh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_gaf.tdf
+    Info (12023): Found entity 1: alt_u_div_gaf File: C:/ECE550/PC6/db/alt_u_div_gaf.tdf Line: 27
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/ECE550/rec_07_08/lcd.sv Line: 48
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 39
-    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 40
-    Warning (13410): Pin "leds[0]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[5]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 37
-    Warning (13410): Pin "lcd_rw" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 36
-    Warning (13410): Pin "lcd_on" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 36
-    Warning (13410): Pin "lcd_blon" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 36
-    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/ECE550/rec_07_08/skeleton.v Line: 38
-    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/ECE550/rec_07_08/skeleton.v Line: 25
+    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 38
+    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 39
+    Warning (13410): Pin "leds[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 36
+    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/ECE550/PC6/skeleton.v Line: 37
+    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/ECE550/PC6/skeleton.v Line: 25
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 17 registers lost all their fanouts during netlist optimizations.
+Info (17049): 19 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/ECE550/PC6/output_files/skeleton.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
-Info (21057): Implemented 2021 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 150 output pins
+Info (21057): Implemented 2642 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 137 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 1534 logic cells
+    Info (21061): Implemented 2167 logic cells
     Info (21064): Implemented 328 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 192 warnings
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Thu Nov 02 15:11:19 2023
-    Info: Elapsed time: 00:00:10
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 203 warnings
+    Info: Peak virtual memory: 4889 megabytes
+    Info: Processing ended: Thu Dec 14 13:59:13 2023
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/ECE550/PC6/output_files/skeleton.map.smsg.
 
 

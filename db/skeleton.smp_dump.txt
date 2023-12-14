@@ -1,4 +1,11 @@
 
+State Machine - |skeleton|vga_controller:vga_ins|mv
+Name mv.11 mv.10 mv.01 mv.00 
+mv.00 0 0 0 0 
+mv.01 0 0 1 1 
+mv.10 0 1 0 1 
+mv.11 1 0 0 1 
+
 State Machine - |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|s_ps2_transceiver
 Name s_ps2_transceiver.PS2_STATE_3_END_TRANSFER s_ps2_transceiver.PS2_STATE_2_COMMAND_OUT s_ps2_transceiver.PS2_STATE_1_DATA_IN s_ps2_transceiver.PS2_STATE_0_IDLE s_ps2_transceiver.PS2_STATE_4_END_DELAYED 
 s_ps2_transceiver.PS2_STATE_0_IDLE 0 0 0 0 0 
